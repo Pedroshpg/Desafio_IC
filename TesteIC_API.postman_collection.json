@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "92f73df4-5ce1-4ba7-9c55-5d4c4b049216",
+		"name": "TesteIC_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46531380",
+		"_collection_link": "https://pedronoleto.postman.co/workspace/Pedro-Noleto's-Workspace~b1c9166c-1137-4565-84a1-82f4e62f6e1b/collection/46531380-92f73df4-5ce1-4ba7-9c55-5d4c4b049216?action=share&source=collection_link&creator=46531380"
+	},
+	"item": [
+		{
+			"name": "Busca dados da operadora através de um termo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/buscar?termo=abertta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "abertta"
+						}
+					]
+				},
+				"description": "Essa requisição realiza uma busca textual simples na base de operadoras de saúde.\r\nAo encontrar um ou mais registros que contenham o termo informado (em qualquer campo), retorna as linhas completas com todos os dados correspondentes."
+			},
+			"response": []
+		}
+	]
+}
